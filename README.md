@@ -12,11 +12,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Step to follow you clone the repo
 
-`git clone https://github.com/Runtime-T3rror/UniCon-frontend.git`
-Change directory to 'UniCon-frontend
-`git checkout ` + `[your branch name]`
-`npm install`
+- `git clone https://github.com/Runtime-T3rror/UniCon-frontend.git`
+- Change directory to 'UniCon-frontend
+- `git checkout ` + `[your branch name]`
+- `npm install`
 
 ## Steps to generate new component
 
-`ng g c components/` + `[component name]`
+- `ng g c components/` + `[component name]`
