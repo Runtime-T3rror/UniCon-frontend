@@ -10,10 +10,6 @@
     --current: #453131; /*Indiacates current lecture's background color*/
 }
 
-body{
-    background: #222831;
-}
-
 #tt{
     position: relative;
     width: 35vw;
