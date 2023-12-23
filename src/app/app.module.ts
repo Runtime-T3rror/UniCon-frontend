@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TimetabledarkComponent } from './components/timetabledark/timetabledark.component';
+import { TimetablelightComponent } from './components/timetablelight/timetablelight.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TimetabledarkComponent
+    TimetabledarkComponent,
+    TimetablelightComponent
   ],
   imports: [
     BrowserModule,
