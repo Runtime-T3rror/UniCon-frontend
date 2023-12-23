@@ -33,7 +33,8 @@ table{
     color: var(--textcolor);
     border-radius: 0.2rem;
     padding: 0.5rem 0.1rem;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 .lecture{
@@ -59,7 +60,7 @@ table{
     text-align: center;
     color: var(--textcolor);
     padding: 0.5rem 2rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .subject{
@@ -67,7 +68,7 @@ table{
     color: var(--textcolor);
     padding: 0.5rem 2rem;
     width: 2rem;
-    font-weight: 700;
+    font-weight: 600;
     transition: 500ms transform  100ms ease,500ms color 100ms ease;
 }
 
@@ -94,10 +95,10 @@ table{
 
 .lectureClass{
     width: 2rem;
-    display: inline-block;
+    display: inline;
     color: var(--textcolor);
     padding: 0.5rem 2rem;
-    font-weight: 700;  
+    font-weight: 600;  
 }
 
 .extra{
