@@ -10,6 +10,10 @@
     --current: #453131; /*Indiacates current lecture's background color*/
 }
 
+body{
+    background: #222813;
+}
+
 #tt{
     position: relative;
     width: 35vw;
@@ -24,7 +28,7 @@
 }
 
 #breakRow{
-    border-bottom: 0.1rem solid var(--borderbottom);
+    border-bottom: 0.1rem solid #fbfbfbaf;
     cursor:default;
 }
 
@@ -32,34 +36,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--breakbackground);
-    color: var(--offWhite);
+    background: #5a549c;
+    color: #F5F5F5;;
     border-radius: 1.5vw;
     padding: 0.5rem 0.1rem;
     font-weight: 700;
 }
 
 .lecture{
-    border-bottom: 0.1rem solid var(--borderbottom);
+    border-bottom: 0.1rem solid #fbfbfbaf;
     transition: 500ms background 100ms ease,500ms color 100ms ease;
     cursor:default;
 }
 
 .lecture:hover:not(.current){
-    background: var(--hoveredrow);
+    background: #22283133;
 }
 
 .current{
-    background: var(--current);
+    background: #453131;
 }
 
 .lectureTime{
-    color: var(--lectureTimings);
+    color: #4285F4;
     padding: 0.5rem 1rem;
 }
 
 .subject{
-    color: var(--offWhite);
+    color: #F5F5F5;;
     padding: 0.5rem 1rem;
     font-weight: 700;
     transition: 500ms transform  100ms ease,500ms color 100ms ease;
@@ -67,25 +71,25 @@
 
 .subject:hover{
     transform: scale(1.1);
-    color: var(--hoveredsubfac);
+    color: #259584e5;
 }
 
 
 .facaulty{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color: var(--fac);
+    color: #c1d7f9;
     padding: 0rem 1rem;
     transition: 500ms transform 100ms ease;
 }
 
 .facaulty:hover{
     transform: scale(1.1);
-    color: var(--hoveredsubfac);
+    color: #259584e5;
 }
 
 .lectureClass{
-    color: var(--offWhite);
+    color: #F5F5F5;;
     padding: 0.5rem 1rem;
     font-weight: 700;
 }
