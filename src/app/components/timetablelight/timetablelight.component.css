@@ -1,106 +1,115 @@
-:root{
-    --fac : #1f5a6e;
-    --breakbackground : rgb(227, 226, 226); /* Same as Div */
-    --textcolor:#2b2727; /* Used in everything except faculty name*/
-    --borderbottom : #fff;
-    --hoveredsubfac : #72e625e2;
-    --hoveredrow : #909dd5;
-    --current: #1d91a5f5; /*Indiacates current lecture's background color*/
+:root {
+    --fac: #1f5a6e;
+    --breakbackground: rgb(227, 226, 226);
+    /* Same as Div */
+    --textcolor: #2b2727;
+    /* Used in everything except faculty name*/
+    --borderbottom: #fff;
+    --hoveredsubfac: #72e625e2;
+    --hoveredrow: #909dd5;
+    --current: #1d91a5f5;
+    --breakfontweight : 800;
+    --breakfontsize : 25px;
+    --textfont : "Montserrat",sans-serif; 
+    --facfont : "Lato",sans-serif; 
+    --lecturepad : 0.2rem; /* all sides*/
+    --lecturewidth : 30rem;
+    --borderradius : 0.2rem;
+    --lecturemargin : 0.4rem;
+    --subjectwidth : 4rem;
+    --topbottompad : 0.2rem;
+    --rightleftpad : 2rem;
+    --subjectfontweight : 600;
+    --facfontweight : 400;
+    --lecturetimewidth : 9rem;
+    --lectureclasselementwidth : 4rem;
+    --displaytype : inline-block;
+    --scalevalue : 1.2;
+    --transitionduration : 500ms;
+    --transitiondelay : 100ms;
+    --transitiontimingfunction : ease;
+    --transitionproperty : all;
 }
 
-table{
-    border: transparent;
-}
-
-#tt{
-    position: relative;
-    background: transparent;
-    border-radius: 0.5vw;
-    margin: 1vw;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.lecture a{
-    text-decoration: none;
-}
-
-#break{
-    cursor:default;
+#break {
+    cursor: default;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--breakbackground);
     color: var(--textcolor);
-    border-radius: 0.2rem;
-    padding: 0.5rem 0.1rem;
-    font-weight: 800;
-    font-size: 20px;
-}
-
-.lecture{
-    transition: 500ms background 100ms ease,500ms color 100ms ease;
-    cursor:default;
+    font-weight: var(--breakfontweight);
+    font-size: var(--breakfontsize);
+    font-family: var(--textfont);
+    width: var(--lecturewidth);
     background: var(--breakbackground);
-    border-radius: 0.2rem;
-    padding: 0.2rem;
-    margin: 0.1rem;
+    border-radius: var(--borderradius);
+    padding: var(--lecturepad);
+    margin: var(--lecturemargin);
 }
 
-.lecture:hover:not(.current){
-    background: var(--hoveredrow);
-}
-
-.current{
+#current {
     background: var(--current);
 }
 
-.lectureTime{
-    width: fit-content;
-    display: inline-block;
-    text-align: center;
-    color: var(--textcolor);
-    padding: 0.5rem 2rem;
-    font-weight: 400;
-}
-
-.subject{
-    display: inline-block;
-    color: var(--textcolor);
-    padding: 0.5rem 2rem;
-    width: 2rem;
-    font-weight: 600;
-    transition: 500ms transform  100ms ease,500ms color 100ms ease;
-}
-
-.subject:hover{
-    transform: scale(1.1);
-    color: var(--hoveredsubfac);
-}
-
-
-.facaulty{
-    width: 2rem;
-    display: inline-block;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: var(--fac);
-    padding: 0rem 2rem;
-    transition: 500ms transform 100ms ease;
-}
-
-.facaulty:hover{
-    transform: scale(1.1);
-    color: var(--hoveredsubfac);
-}
-
-.lectureClass{
-    width: 2rem;
-    display: inline;
-    color: var(--textcolor);
-    padding: 0.5rem 2rem;
-    font-weight: 600;  
-}
-
-.extra{
+#extra {
     display: none;
+}
+
+.lecture a {
+    text-decoration: none;
+}
+
+.lecture {
+    width: var(--lecturewidth);
+    background: var(--breakbackground);
+    border-radius: var(--borderradius);
+    padding: var(--lecturepad);
+    margin: var(--lecturemargin);
+    cursor: default;
+    font-family: var(--textfont);
+    transition: var(--transitionproperty) var(--transitionduration) var(--transitiondelay) var(--transitiontimingfunction);
+}
+
+.lecture:hover:not(.cureent){
+    background: var(--hoveredrow);
+}
+
+
+.subject {
+    display: var(--displaytype);
+    color: var(--textcolor);
+    width: var(--subjectwidth);
+    padding: var(--topbottompad) var(--rightleftpad);
+    font-weight: var(--subjectfontweight);
+    
+    transition: var(--transitionproperty) var(--transitionduration) var(--transitiondelay) var(--transitiontimingfunction);
+}
+
+.subject:hover ,.facaulty:hover{
+    transform: scale(var(--scalevalue));
+    color: var(--hoveredsubfac);
+}
+
+.facaulty {
+    padding: var(--topbottompad) var(--rightleftpad);
+    font-family: var(--facfont);
+    font-weight: var(--facfont);
+    color: var(--fac);
+    transition: var(--transitionproperty) var(--transitionduration) var(--transitiondelay) var(--transitiontimingfunction);
+}
+
+.lectureTime {
+    display: var(--displaytype);
+    width: var(--lecturetimewidth);
+    color: var(--textcolor);
+    padding: var(--topbottompad) var(--rightleftpad);
+    font-weight: var(--facfontweight);
+}
+
+.lectureClass {
+    display: var(--displaytype);
+    width: var(--lectureclasselementwidth);
+    color: var(--textcolor);
+    padding: var(--topbottompad) var(--rightleftpad);
+    font-weight: var(--subjectfontweight);
 }
