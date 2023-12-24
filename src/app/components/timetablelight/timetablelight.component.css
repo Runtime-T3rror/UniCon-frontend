@@ -1,115 +1,84 @@
-:root {
-    --fac: #1f5a6e;
-    --breakbackground: rgb(227, 226, 226);
-    /* Same as Div */
-    --textcolor: #2b2727;
-    /* Used in everything except faculty name*/
-    --borderbottom: #fff;
-    --hoveredsubfac: #72e625e2;
-    --hoveredrow: #909dd5;
-    --current: #1d91a5f5;
-    --breakfontweight : 800;
-    --breakfontsize : 25px;
-    --textfont : "Montserrat",sans-serif; 
-    --facfont : "Lato",sans-serif; 
-    --lecturepad : 0.2rem; /* all sides*/
-    --lecturewidth : 30rem;
-    --borderradius : 0.2rem;
-    --lecturemargin : 0.4rem;
-    --subjectwidth : 4rem;
-    --topbottompad : 0.2rem;
-    --rightleftpad : 2rem;
-    --subjectfontweight : 600;
-    --facfontweight : 400;
-    --lecturetimewidth : 9rem;
-    --lectureclasselementwidth : 4rem;
-    --displaytype : inline-block;
-    --scalevalue : 1.2;
-    --transitionduration : 500ms;
-    --transitiondelay : 100ms;
-    --transitiontimingfunction : ease;
-    --transitionproperty : all;
-}
-
 #break {
     cursor: default;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--textcolor);
-    font-weight: var(--breakfontweight);
-    font-size: var(--breakfontsize);
-    font-family: var(--textfont);
-    width: var(--lecturewidth);
-    background: var(--breakbackground);
-    border-radius: var(--borderradius);
-    padding: var(--lecturepad);
-    margin: var(--lecturemargin);
+    color: var(--infinity);
+    font-weight: 800;
+    font-size: 25px;
+    font-family: "Montserrat",sans-serif; ;
+    width: 30rem;
+    background: var(--gray);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    margin: 0.4rem;
 }
 
 #current {
-    background: var(--current);
+    background: #1d91a5f5;
 }
 
-#extra {
+/* #extra {
     display: none;
-}
+} */
 
 .lecture a {
     text-decoration: none;
 }
 
 .lecture {
-    width: var(--lecturewidth);
-    background: var(--breakbackground);
-    border-radius: var(--borderradius);
-    padding: var(--lecturepad);
-    margin: var(--lecturemargin);
+    width: 30rem;
+    background: var(--gray);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    margin: 0.4rem;
     cursor: default;
-    font-family: var(--textfont);
-    transition: var(--transitionproperty) var(--transitionduration) var(--transitiondelay) var(--transitiontimingfunction);
+    font-family: "Montserrat",sans-serif; ;
+    transition: all 500ms 100ms ease;
 }
 
 .lecture:hover:not(.cureent){
-    background: var(--hoveredrow);
+    background: #909dd5;
+}
+
+.subjectandlectureClassandlectureTime{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
 }
 
 
 .subject {
-    display: var(--displaytype);
-    color: var(--textcolor);
-    width: var(--subjectwidth);
-    padding: var(--topbottompad) var(--rightleftpad);
-    font-weight: var(--subjectfontweight);
+    color: var(--infinity);
+    padding: 0.2rem 2rem;
+    font-weight: 600;
     
-    transition: var(--transitionproperty) var(--transitionduration) var(--transitiondelay) var(--transitiontimingfunction);
+    transition: all 500ms 100ms ease;
 }
 
 .subject:hover ,.facaulty:hover{
-    transform: scale(var(--scalevalue));
-    color: var(--hoveredsubfac);
+    transform: scale(1.1);
+    color: #ddd42ba1;
 }
 
 .facaulty {
-    padding: var(--topbottompad) var(--rightleftpad);
-    font-family: var(--facfont);
-    font-weight: var(--facfont);
-    color: var(--fac);
-    transition: var(--transitionproperty) var(--transitionduration) var(--transitiondelay) var(--transitiontimingfunction);
+    padding: 0.2rem 2rem;
+    font-family: "Lato",sans-serif; ;
+    font-weight: "Lato",sans-serif; ;
+    color: var(--licorice);
+    transition: all 500ms 100ms ease;
 }
 
 .lectureTime {
-    display: var(--displaytype);
-    width: var(--lecturetimewidth);
-    color: var(--textcolor);
-    padding: var(--topbottompad) var(--rightleftpad);
-    font-weight: var(--facfontweight);
+    display: inline;
+    color: var(--infinity);
+    padding: 0.2rem 2rem;
+    font-weight: 400;
 }
 
 .lectureClass {
-    display: var(--displaytype);
-    width: var(--lectureclasselementwidth);
-    color: var(--textcolor);
-    padding: var(--topbottompad) var(--rightleftpad);
-    font-weight: var(--subjectfontweight);
+    display: inline;
+    color: var(--infinity);
+    padding: 0.2rem 2rem;
+    font-weight: 600;
 }
