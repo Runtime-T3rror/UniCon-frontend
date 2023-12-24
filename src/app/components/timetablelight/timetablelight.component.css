@@ -18,9 +18,9 @@
     background: #1d91a5f5;
 }
 
-/* #extra {
+#extra {
     display: none;
-} */
+}
 
 .lecture a {
     text-decoration: none;
@@ -64,7 +64,6 @@
 .facaulty {
     padding: 0.2rem 2rem;
     font-family: "Lato",sans-serif; ;
-    font-weight: "Lato",sans-serif; ;
     color: var(--licorice);
     transition: all 500ms 100ms ease;
 }
@@ -73,7 +72,7 @@
     display: inline;
     color: var(--infinity);
     padding: 0.2rem 2rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .lectureClass {
