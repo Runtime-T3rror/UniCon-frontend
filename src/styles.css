@@ -6,3 +6,7 @@
     --white: #fff;
     --licorice: #545454;
 }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
