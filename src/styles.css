@@ -1,8 +1,32 @@
 :root {
-    --whiteEdgar: #ededed;
-    --gray: #d5d5d5;
-    --cyanSky: #00adb5;
-    --infinity: #222831;
-    --white: #fff;
-    --licorice: #545454;
+    --fac: #1f5a6e;
+    --breakbackground: rgb(227, 226, 226);
+    /* Same as Div */
+    --textcolor: #2b2727;
+    /* Used in everything except faculty name*/
+    --borderbottom: #fff;
+    --hoveredsubfac: #72e625e2;
+    --hoveredrow: #909dd5;
+    --current: #1d91a5f5;
+    --breakfontweight : 800;
+    --breakfontsize : 25px;
+    --textfont : "Montserrat",sans-serif; 
+    --facfont : "Lato",sans-serif; 
+    --lecturepad : 0.2rem; /* all sides*/
+    --lecturewidth : 30rem;
+    --borderradius : 0.2rem;
+    --lecturemargin : 0.4rem;
+    --subjectwidth : 4rem;
+    --topbottompad : 0.2rem;
+    --rightleftpad : 2rem;
+    --subjectfontweight : 600;
+    --facfontweight : 400;
+    --lecturetimewidth : 9rem;
+    --lectureclasswidth : 4rem;
+    /* --displaytype : inline-block; */
+    --scalevalue : 1.2;
+    --transitionduration : 500ms;
+    --transitiondelay : 100ms;
+    --transitiontimingfunction : ease;
+    --transitionproperty : all;
 }
