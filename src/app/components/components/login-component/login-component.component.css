@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --LIGHTTHEMEMBGCOLOR : #eee;
+    --BUTTONBGCOLOR : blue;
+    --TEXTCOLOR : blue;
+    --FF : 'Montserrat', sans-serif;
+    --FONT : <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+}
+@media (prefers-color-scheme : dark ){
+    :root{
+       --LIGHTTHEMEMBGCOLOR : #222831;
+       --BUTTONBGCOLOR : #00adb5;
+       --TEXTCOLOR : #eee;
+    }
+}
+body{
+    padding: 5%;
+    background-color: var(--LIGHTTHEMEMBGCOLOR);
+    height: 100vh;
+    width: 100vw;
+}
+.loginclass{
+    height: 100%;
+    background-image: url(../login-component/loginbgimg.jpg);
+    background-color: var(--LIGHTTHEMEMBGCOLOR);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0.2rem 0.3rem var(--DARKTHEMEBGCOLOR);
+    z-index: 1;
+}
+.loginclass_content{
+    display: flex;
+   height: 90%;
+   width: 50%;
+   border-radius: 0.5rem;
+   background-color:  var(--LIGHTTHEMEMBGCOLOR);
+   z-index: 2;
+   border: 0.1rem solid var(--DARKTHEMEBGCOLOR);
+   padding-top: 2rem;
+   flex-direction: column;
+   gap: 3rem;
+}
+.loginclass_flex{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Heading{
+    width: 100%;
+    padding: 0.5rem;
+    font-family: var(--FF);
+    color: var(--TEXTCOLOR);
+    font-size: 3rem;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.useript{
+    display: flex;
+    padding-top: 1rem;
+    height: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+.usernameipt{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.username{
+    height:100% ;
+    width: 50%; 
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+.usernamepwd{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.userpwd{
+    height: 100% ;
+    width: 50%; 
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+}
+.SignUpdiv{
+    padding-top: 1rem;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    
+}
+.signup{
+    height: 100%;
+    width:  50%;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    font-size: 1.5rem;
+    background-color: var(--BUTTONBGCOLOR) ;
+    color : #eee;
+    font-family: var(--FF) ;
+
+}
+.forgotpwdLink{
+    padding-top: 1rem;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.forgotpwd{
+    color: var(--TEXTCOLOR);
+    text-decoration: none;
+    font-family: var(--FF);
+}
+.messageLink{
+    padding-top: 0.5rem;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.message{
+    color: var(--TEXTCOLOR);
+    text-decoration: none;
+    font-family: var(--FF);
+}
+
+
+
