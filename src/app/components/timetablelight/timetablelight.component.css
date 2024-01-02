@@ -1,83 +1,42 @@
-#break {
-    cursor: default;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--infinity);
+:root {
+    --whiteEdgar: #ededed;
+    --gray: #d5d5d5;
+    --cyanSky: #00adb5;
+    --infinity: #222831;
+    --white: #fff;
+    --licorice: #545454;
+}
+
+#break{
+    font-size: 3rem;
+    background: var(--infinity);
+    color: var(--white);
     font-weight: 800;
-    font-size: 25px;
-    font-family: "Montserrat",sans-serif; ;
-    width: 30rem;
-    background: var(--gray);
-    border-radius: 0.2rem;
-    padding: 0.2rem;
-    margin: 0.4rem;
+    font-family: "Montserrat", sans-serif;
 }
 
-#current {
-    background: #1d91a5f5;
-}
-
-#extra {
+#extra{
     display: none;
 }
 
-.lecture a {
-    text-decoration: none;
+.class,
+.sf {
+    color: inherit;
+    font-weight: 600;
 }
 
-.lecture {
-    width: 30rem;
+.row {
     background: var(--gray);
-    border-radius: 0.2rem;
-    padding: 0.2rem;
-    margin: 0.4rem;
-    cursor: default;
-    font-family: "Montserrat",sans-serif; ;
-    transition: all 500ms 100ms ease;
-}
-
-.lecture:hover:not(.cureent){
-    background: #909dd5;
-}
-
-.subjectandlectureClassandlectureTime{
-    display: flex;
-    align-items:baseline;
-    justify-content: space-between;
-}
-
-
-.subject {
-    color: var(--infinity);
-    padding: 0.2rem 2rem;
-    font-weight: 600;
-    
-    transition: all 500ms 100ms ease;
-}
-
-.subject:hover ,.facaulty:hover{
-    transform: scale(1.1);
-    color: #ddd42ba1;
-}
-
-.facaulty {
-    padding: 0.2rem 2rem;
-    font-family: "Lato",sans-serif; ;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    border-radius: 0.7rem;
     color: var(--licorice);
-    transition: all 500ms 100ms ease;
+    font-family: "Montserrat", sans-serif;
 }
 
-.lectureTime {
-    display: inline;
-    color: var(--infinity);
-    padding: 0.2rem 2rem;
-    font-weight: 600;
-}
-
-.lectureClass {
-    display: inline;
-    color: var(--infinity);
-    padding: 0.2rem 2rem;
-    font-weight: 600;
+.time,
+.class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
