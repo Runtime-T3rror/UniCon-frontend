@@ -1,0 +1,42 @@
+:root {
+    --whiteEdgar: #ededed;
+    --gray: #d5d5d5;
+    --cyanSky: #00adb5;
+    --infinity: #222831;
+    --white: #fff;
+    --licorice: #545454;
+}
+
+#break{
+    font-size: 3rem;
+    background: var(--infinity);
+    color: var(--white);
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+}
+
+#extra{
+    display: none;
+}
+
+.class,
+.sf {
+    color: inherit;
+    font-weight: 600;
+}
+
+.row {
+    background: var(--gray);
+    justify-content: space-around;
+    font-size: 1.6rem;
+    border-radius: 0.7rem;
+    color: var(--licorice);
+    font-family: "Montserrat", sans-serif;
+}
+
+.time,
+.class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
