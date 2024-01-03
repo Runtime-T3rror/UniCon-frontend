@@ -3,11 +3,10 @@
     padding : 0;
     box-sizing: border-box;
 }
-:root{
-
+:root{  
     --LIGHTTHEMEMBGCOLOR : #eee;
-    --BUTTONBGCOLOR : blue;
-    --TEXTCOLOR : blue;
+    --BUTTONBGCOLOR : rgb(9, 9, 48);
+    --TEXTCOLOR : rgb(9, 9, 48);
     --FF : 'Montserrat', sans-serif;
     --FONT : <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
